@@ -1,5 +1,8 @@
 
-def get_sum(a,b):
+def get_sum(a, b):
+    return sum(range(min(a, b), max(a, b) + 1))
+
+def get_sum2(a,b):
     if a == b:
         return a
     sum = 0
