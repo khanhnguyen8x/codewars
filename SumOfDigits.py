@@ -1,4 +1,8 @@
-def digital_root(n: int):
+def digital_root(n):
+    return n if n < 10 else digital_root(sum(map(int, str(n))))
+
+
+def digital_root2(n: int):
     if len(str(n)) == 1:
         return n
     return calculate(str(n))
